@@ -1,3 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 html, body, #root, #root > div {
   height: 100%;
+}
+
+#header-area{
+  width: 1024px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+#header-area img{
+  width: 128px;
+  height: 36px;
+}
+
+#body{
+  min-height: 100vh;
+  max-width: 1024px;
+  width: 100%;
+  margin : 0 auto;
+  padding-bottom: 24px;
+}
+
+@media screen and (max-width: 400px) {
+  .product-card {
+    width: 160px !important;
+  }
+  #header {
+    padding: 0 8px;
+  }
+  #body {
+    padding: 0 8px;
+  }
+  .ant-carousel {
+    margin: 0 -8px;
+  }
 }
